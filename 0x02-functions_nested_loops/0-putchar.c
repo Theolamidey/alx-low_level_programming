@@ -1,43 +1,22 @@
 #include <stdio.h>
 
-
-
 /**
+ * main - Prints the word _putchar
  *
- *  * main - Prints the word _putchar
- *
- *   *
- *
- *    * Return: 0 Success
- *
- *     */
-
-
+ * Return: 0 Success
+ */
 
 int main(void)
-
 {
+	char word[8] = "_putchar";
+	int i;
 
-		char word[8] = "_putchar";
+	for (i = 0; i <= 7; i++)
+	{
+		putchar(word[i]);
+	}
 
-			int i;
+	putchar('\n');
 
-
-
-				for (i = 0; i <= 7; i++)
-
-						{
-
-									putchar(word[i]);
-
-										}
-
-
-
-					putchar('\n');
-
-
-
-						return (0);
-
+	return (0);
 }
